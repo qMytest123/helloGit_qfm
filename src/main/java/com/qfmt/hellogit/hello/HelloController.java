@@ -11,6 +11,7 @@ public class HelloController {
     @RequestMapping(value="/wel", method = RequestMethod.GET)
     public String show(Model model){
 
+        System.out.println("modify");
         model.addAttribute("welcome","hello git");
         return "result";
     }
